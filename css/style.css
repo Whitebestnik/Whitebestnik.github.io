@@ -1,0 +1,640 @@
+/*----------Стили для сетки----------*/
+
+.color-red {
+    outline: red dashed 2px;
+    background: rgba(255, 0, 0, 0.3);
+}
+.color-green {
+    outline: greenyellow dashed 2px;
+    background: rgba(0, 255, 0, 0.3);
+}
+.color-blue {
+    outline: yellow dashed 2px;
+    background: rgba(0, 0, 255, 0.3);
+}
+/*----------Стили для главной + общие стили для всех страниц----------*/
+
+@font-face {
+    font-family: MyriadPro; /* Гарнитура шрифта */
+    src: url(../fonts/MyriadPro.ttf); /* Путь к файлу со шрифтом */
+   }
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container {
+    width: 935px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+body {
+    background-color: #ffffff;
+    
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+.main-header {
+    background-image: linear-gradient(159deg, #596c9e 22%, #495a83 22%, #495a83 38%, #384563 38%, #384563 58%, #2c3750 58%);
+}
+/*----------Нав. меню на всех страницах----------*/
+.header-navigation {
+    padding-top: 34px;
+}
+.header-navigation__logo {
+    display: inline-block;
+    float: left;
+    margin-left: 20px;
+}
+.header-navigation__menu {
+    float: right;
+    
+    position: relative;
+    padding: 0;
+    font-size: 0;
+}
+.header-navigation__menu li {
+    display: inline-block;
+}
+.header-navigation__menu a {
+    display: inline-block;
+    
+    padding: 8px 21px;
+    background-image: linear-gradient(to bottom, #6681b0, #040913);
+    border-top: 1px solid #646e85;
+    border-bottom: 1px solid #646e85;
+    
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration: none;
+}
+.header-navigation__menu li::after {
+    content: "";
+    height: 18px;
+    position: absolute;
+    top: 7px;
+    
+    border-left: 1px solid #6e7f9d;
+    border-right: 1px solid #2b384f;
+}
+.header-navigation__menu li:last-child::after {
+    border-left: none;
+    border-right: none;
+}
+.header-navigation__menu li:first-child a
+{
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.header-navigation__menu li:last-child a
+{
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.header-navigation__menu a:hover {
+    background-image: linear-gradient(to bottom, #354561, #45587a, #5c74a0);
+    cursor: pointer;
+}
+/*----------Меню "хлебные крошки", все стр. кроме главной----------*/
+.header-breadcrumbs {
+    margin-top: 30px;
+    height: 47px;
+    background-color: #0d1320;
+}
+.header-breadcrumbs__menu {
+    display: inline-block;
+    margin-left: -40px;
+    margin-top: 14px;
+}
+.header-breadcrumbs__menu li {
+    display: inline-block; 
+}
+.header-breadcrumbs__menu li a {
+    color: #afafaf;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.header-breadcrumbs__menu li a::after {
+    content: "/";
+    margin-left: 8px;
+    margin-right: 4px;
+}
+.header-breadcrumbs__menu li:last-child a::after {
+    content: none;
+}
+.header-breadcrumbs__menu a:hover {
+    color: #ffffff;
+}
+/*----------Слайдер на главной---------*/
+.header-sliders {
+    position: relative;
+    width: 900px;
+    height: 282px;
+    
+    margin: 0 auto;
+    margin-top: 30px;
+    background-image: url("../img/slider-1.jpg");
+    background-repeat: no-repeat;
+    padding-bottom: 41px;
+}
+.header-sliders::before {
+    content: "";
+    width: 920px;
+    height: 282px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    
+    border: 10px solid rgba(33, 41, 60, 0.5);
+    border-radius: 10px;
+}
+.header-sliders__bar {
+    position: absolute;
+    width: 920px;
+    height: 60px;
+    bottom: 40px;
+    left: 0;
+    
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.header-sliders__selection {
+    float: left;
+    
+    margin-left: 15px;
+    margin-top: 25px;
+    padding: 0;
+    
+    font-size: 0;
+}
+.header-sliders__selection li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    
+    background-image: linear-gradient(to bottom, #595959, #2e2e2e);
+    border-radius: 50%;
+    margin-right: 11px;
+    vertical-align: top;
+}
+.header-sliders__selection li:hover {
+    width: 12px;
+    height: 12px;
+    
+    background-image: linear-gradient(to bottom, #2d2c2d, #636262);
+    cursor: pointer;
+}
+.header-sliders__descr {
+    position: absolute;
+    right: 110px;
+    bottom: 16px;
+
+    width: 175px;
+    height: 16px;
+    padding: 5px;
+    background-color: black;
+    border-radius: 5px;
+    overflow: hidden;
+
+    color: white;
+    font-size: 12px;
+    font-family: "MyriadPro", serif; 
+    line-height: 18px;
+    vertical-align: middle;
+}
+.header-sliders__learn-more {
+    position: absolute;
+    right: 12px;
+    top: 17px;
+}
+main {
+    border-top: 5px solid #d2d2d2;
+}
+/*----------Основной раздел на главной----------*/
+.main-product {
+    margin-bottom: 64px;
+}
+.main-column-left {
+    float: left;
+    width: 620px;
+}
+.main-column-right {
+    float: right;
+    width: 285px;
+}
+.main-product__title {
+    margin-bottom: 0;
+    
+    font-size: 25px;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    line-height: 47px;
+}
+.main-item__logo {
+    display: inline-block;
+    
+    margin-left: -1px;
+    margin-top: 6px;
+    
+    outline: 6px solid #d5cfcf;
+    outline-offset: -6px;
+}
+.main-item {
+    position: relative;
+    padding-bottom: 30px;
+}
+.main-item::after {
+    content: "";
+    width: 574px;
+    height: 17px;
+    position: absolute;
+    bottom: -24px;
+    
+    background-position: -205px -5px;
+    background-image: url(../img/sprites-home.png);
+}
+.main-item__descr {
+    display: inline-block;
+    width: 320px;
+    height: 85px;
+    overflow: hidden;
+
+    margin-left: 22px;
+    margin-top: 2px;
+    
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    line-height: 22px;
+    vertical-align: top;
+}
+.main-item__learn-more {
+    position: absolute;
+    top: 102px;
+    left: 262px;
+}
+.main-item__features  {
+    padding: 0;
+    margin: 0;
+}
+.main-item__features li {
+    display: inline-block;
+    position: relative;
+    
+    margin-left: 30px;
+    margin-top: 24px;
+}
+.main-item__features li:nth-child(2n) {
+    margin-left: 100px;
+}
+.main-item__features li::before {
+    content: "";
+    width: 24px;
+    height: 20px;
+    position: absolute;
+    left: -32px;
+    top: 0;
+    
+    background-position: -171px -5px;
+    background-image: url(../img/sprites-home.png);
+}
+.main-item__features li a {
+    color: #414141;
+    font-size: 14px;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    text-decoration: none;
+}
+.main-news {
+    position: relative;
+    width: 290px;
+    padding-top: 20px;
+}
+.news-left {
+    float: left;
+}
+.news-right {
+    float: right;
+}
+.main-news__title {
+    margin-bottom: 0;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: normal;
+}
+.main-news__content {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+}
+.main-news__learn-more {
+    position: absolute;
+    right: 20px;
+    bottom: -28px;
+}
+/*----------Боковая колонка на всех страницах----------*/
+.main-sidebar {
+    margin-top: 10px;
+}
+.main-column-right {
+    float: right;
+    width: 280px;
+}
+.main-sidebar__title {
+    margin-bottom: 0; 
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: normal;
+}
+.main-sidebar__descr {
+    display: inline-block;
+    margin-bottom: 22px;
+    
+    font-family: Georgia, serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+.sidebar-navigations {
+    position: relative;
+    margin: 0;
+    margin-bottom: 2px;
+    padding: 0 22px;
+
+    outline: 1px solid #e5e5e5;
+    outline-offset: -2px;
+    background-color: #ebebeb;
+    border: 1px solid #ebebeb;
+    border-top: 1px solid #cacaca;
+}
+.sidebar-navigations li {
+    list-style: none;
+    padding-left: 40px;
+    padding-top: 23px;
+    padding-bottom: 18px;
+    
+    border-bottom: 1px solid #d7d7d7;
+    border-top: 1px solid #ffffff;
+}
+.sidebar-navigations li:first-child {
+    border-top: none;
+}
+.sidebar-navigations li:last-child {
+    border-bottom: none;
+    padding-bottom: 26px;
+}
+.sidebar-navigations li a {
+    position: relative;
+    color: #2a344a;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.sidebar-navigations li a::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: -44px;
+    top: -6px;
+    
+    background-position: -6px -5px;
+    background-image: url(../img/sprites-home.png);
+}
+.sidebar-navigations li a:hover {
+    color: #707070;
+}
+.sidebar-navigations li:nth-child(2) a::before {
+    background-position: -45px -5px;
+    background-image: url(../img/sprites-home.png);
+}
+.sidebar-navigations li:nth-child(3) a::before {
+    background-position: -87px -5px;
+    background-image: url(../img/sprites-home.png);
+}
+.sidebar-navigations li:nth-child(4) a::before {
+    background-position: -129px -5px;
+    background-image: url(../img/sprites-home.png);
+}
+.main-sidebar__news-title {
+    display: inline-block;
+    margin-bottom: 8px;
+    
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: normal;
+}
+.sidebar-news {
+    position: relative;
+    padding: 0 20px;
+    outline: 1px solid #e5e5e5;
+    outline-offset: -2px;
+    background-color: #ebebeb;
+    border: 1px solid #ebebeb;
+    border-top: 1px solid #cacaca;
+}
+.sidebar-news__item {
+    list-style: none;
+    border-bottom: 1px solid #d7d7d7;
+    border-top: 1px solid #ffffff;
+}
+.sidebar-news__item a {
+    text-decoration: none;
+}
+.sidebar-news__item a:hover .sidebar-news__item-title,
+.sidebar-news__item a:hover .sidebar-news__item-date,
+.sidebar-news__item a:hover .sidebar-news__item-comments,
+.sidebar-news__item a:hover .sidebar-news__item-summary
+{
+    text-decoration: none;
+    color: #000000;
+}
+.sidebar-news__item:first-child {
+    border-top: none;
+}
+.sidebar-news__item:last-child {
+    border-bottom: none;
+}
+.sidebar-news__item-title {
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 18px;
+    
+    color: #2a344a;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.sidebar-news__item-date {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-right: 5px;
+    border-right: 1px solid #5d5d5d;
+    
+    color: #5d5d5d;
+    font-family: Georgia, serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: italic;
+}
+.sidebar-news__item-comments {
+    display: inline-block;
+    margin-bottom: 10px;
+    
+    color: #5d5d5d;
+    font-family: Georgia, serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: italic;
+}
+.sidebar-news__item-summary {
+    display: inline-block;
+    margin-bottom: 18px;
+    
+    color: #5d5d5d;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+/*----------Одинаковый футер на всех страницах----------*/
+.main-footer {
+    border-top: 5px solid #d2d2d2;
+    background: linear-gradient(to top, #2f3a55 20%, #394767 50%, #46567d 90% , #34405d 100%);
+}
+.footer-column {
+    width: 280px;
+}
+.footer-left {
+    float: left;
+}
+.footer-center {
+    float: left;
+    margin-left: 50px;
+}
+.footer-right {
+    float: right;
+}
+.footer-column__title {
+    margin-left: 18px;
+    margin-top: 36px;
+    margin-bottom: 18px;
+    
+    color: #bfbfbf;
+    font-family: Georgia, sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+}
+.footer-widget {
+    background-color: #2c3750;
+}
+.footer-widget__nav {
+    list-style: none;
+    padding: 0;
+}
+.footer-widget__nav li {
+    padding-left: 18px;    
+    padding-right: 26px;
+}
+.footer-widget__nav a {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-top: 1px solid #3d4963;
+    border-bottom: 1px solid #1c253a;
+    
+    color: #898989;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;  
+}
+.footer-widget__nav a:hover {
+    color: #ffffff;
+}
+.footer-widget__nav li:first-child a {
+    border-top: none;
+}
+.footer-widget__nav li:last-child a {
+    border-bottom: none;
+    padding-bottom: 20px;
+}
+.footer-widget__descr {
+    height: 175px;
+    overflow: hidden;
+    padding: 20px;
+       
+    color: #898989;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 22px;
+}
+.footer-bar {
+    margin-top: 28px;
+    background: linear-gradient(to top, #0d1320 20%, #0c121e 70%, #090d16 100%);
+}
+.footer-bar__footer-navigation {
+    float: left;
+    display: inline-block;
+    padding: 0;
+
+}
+.footer-bar__footer-navigation li {
+    display: inline-block;
+}
+.footer-bar__footer-navigation li a {
+    padding-right: 5px;
+    border-right: 1px solid #636363;
+    
+    color: #636363;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 22px;
+    text-decoration: none;
+}
+.footer-bar__footer-navigation li a:hover {
+    color: #ffffff;
+}
+.footer-bar__footer-navigation li:last-child a {
+    border-right: none;
+}
+.footer_bar__copyright {
+    float: right;
+    display: inline-block;
+    padding-top: 12px;
+    padding-right: 40px;
+    
+    color: #636363;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 22px; 
+}
+.footer_bar__copyright a {
+    color: #636363;
+}
+.footer_bar__copyright a:hover {
+    color: #ffffff;
+}
+.btn {
+    color: white;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    line-height: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 14px;
+    background-image: radial-gradient(#467bb1, #4a87bd, #27a9e0);
+    border-radius: 5px;
+    text-shadow: 1px 1px 0 black;
+
+}
+.btn:hover {
+    background-image: radial-gradient(#27a9e0, #457ab0);
+}

@@ -1,0 +1,42 @@
+html main {
+    border-top: none;
+    padding-top: 20px;
+}
+.sidebar-navigations {
+    margin-bottom: 2px;
+}
+.sidebar-news {
+    margin-bottom: 52px;
+}
+.main-blog {
+    margin-top: 5px;
+}
+.main-blog__title {
+    font-size: 22px;
+    font-family: Georgia, sans-serif;
+    font-weight: normal;
+    line-height: 47px;
+}
+input, textarea {
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #cdcdcd;
+}
+input {
+    width: 330px;
+    height: 25px;
+    margin-top: 12px;
+}
+textarea {
+    width: 330px;
+    height: 132px;
+    margin-top: 12px;
+}
+input[name="author"] {
+    width: 165px;
+}
+input[type="submit"] {
+    width: 100px;
+    margin-top: 15px;
+    padding-bottom: 22px;
+}

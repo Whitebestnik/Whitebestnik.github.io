@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Hero - blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+<header class="main-header">
+    <nav class="header-navigation container clearfix">
+        <img src="img/logo.png" class="header-navigation__logo" alt="Логотип" width="165" height="42">
+        <ul class="header-navigation__menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="services.html">Features</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="header-breadcrumbs">
+        <div class="container">
+            <ul class="header-breadcrumbs__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container clearfix">
+        <section class="main-blog main-column-left">
+            <h1 class="main-blog__title">New Post</h1>
+            <form action="#" method="post">
+                <input type="text" name="title" placeholder="Title" required><br>
+                <textarea name="post" placeholder="Text" required></textarea><br>
+                <input type="text" name="author" placeholder="Author"><br>
+                <input class="btn" type="submit" name="submit" value="Send Post">
+            </form>
+        </section>
+        <section class="main-sidebar main-column-right">
+            <h2 class="main-sidebar__title">Lorem ipsum dolor sit
+                amet</h2>
+            <b class="main-sidebar__descr">Subtitle goes here</b>
+            <ul class="sidebar-navigations">
+                <li><a href="#">Nam vel tincidunt neque</a></li>
+                <li><a href="#">Vestibulum enim quam</a></li>
+                <li><a href="#">laoreet suscipit urna</a></li>
+                <li><a href="#">Ut sit amet gravida lacus</a></li>
+            </ul>
+            <h3 class="main-sidebar__news-title">Latest News</h3>
+            <ul class="sidebar-news">
+                <li class="sidebar-news__item">
+                    <a href="#">
+                        <h4 class="sidebar-news__item-title">Lorem ipsum dolor sit amet</h4>
+                        <span class="sidebar-news__item-date">July 10th, 2010</span>
+                        <span class="sidebar-news__item-comments">10 Comments</span>
+                        <b class="sidebar-news__item-summary">Ut sit amet gravida lacus...</b>
+                    </a>
+                </li>
+                <li class="sidebar-news__item">
+                    <a href="#">
+                        <h4 class="sidebar-news__item-title">Vestibulum enim quam</h4>
+                        <span class="sidebar-news__item-date">July 24th, 2010</span>
+                        <span class="sidebar-news__item-comments">12 Comments</span>
+                        <b class="sidebar-news__item-summary">laoreet suscipit urna...</b>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </div>
+</main>
+<footer class="main-footer">
+    <div class="container clearfix">
+        <section class="footer-column footer-left">
+            <h3 class="footer-column__title">Links widget</h3>
+            <div class="footer-widget">
+                <ul class="footer-widget__nav">
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer-column footer-center">
+            <h3 class="footer-column__title">Simple text widget</h3>
+            <div class="footer-widget">
+                <p class="footer-widget__descr">Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Nam vel tincidunt neque. Vestibulum
+                    enim quam, viverra pulvinar ex nec, laoreet suscipit urna. Vestibulum
+                    vel viverra tellus, ut tempor mi. Ut sit amet gravida lacus. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Nam vel tincidunt neque. </p>
+            </div>
+        </section>
+        <section class="footer-column footer-right">
+            <h3 class="footer-column__title">Comments widget</h3>
+            <div class="footer-widget">
+                <ul class="footer-widget__nav">
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <div class="footer-bar">
+        <div class="container clearfix">
+            <ul class="footer-bar__footer-navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <b class="footer_bar__copyright">Design by <a href="#">CLICK.NET WEB Design</a></b>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
