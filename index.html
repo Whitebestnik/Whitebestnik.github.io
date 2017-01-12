@@ -1,62 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
-<html>
+<html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <title>Bootstrap</title>
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Golden one</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i|Montserrat:400,700|Roboto+Slab:300,400" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<div class="container">
-    <div class="main-header row">
-            <div class="main-header_xs visible-xs-block col-xs-10">1</div>
-            <nav class="main-header_xs visible-xs-block col-xs-2">2</nav>
-
-            <nav class="main-header_sm_md hidden-xs col-sm-7">1</nav>
-            <div class="main-header_sm_md hidden-xs col-sm-5">2</div>
-    </div>
-    <div class="main">
-        <div class="main__title-block row">
-            <div class="main__title-block_xs visible-xs-block col-xs-12">3</div>
-            <div class="main__title-block_sm visible-sm-block col-xs-12">3</div>
-            <div class="main__title-block_md visible-md-block visible-lg-block col-xs-12">3</div>
-        </div>
-        <div class="main__welcome-block row">
-            <div class="main__welcome-block_xs visible-xs-block col-xs-9">4</div>
-            <div class="main__welcome-block_xs visible-xs-block col-xs-3">5</div>
-
-            <div class="main__welcome-block_sm visible-sm-block col-sm-9">4</div>
-            <div class="main__welcome-block_sm visible-sm-block col-sm-3">5</div>
-
-            <div class="main__welcome-block_md visible-md-block visible-lg-block col-md-9">4</div>
-            <div class="main__welcome-block_md visible-md-block visible-lg-block col-md-3">5</div>
-        </div>
-        <div class="main__gallery_xs visible-xs-block row">
-            <div class="main__gallery-continue col-xs-12">6</div>
-            <div class="main__gallery-first col-xs-12"></div>
-            <div class="main__gallery-second col-xs-12"></div>
-        </div>
-
-        <!-- <div class="main__gallery_sm hidden-xs visible-sm-block row">
-            <div class="main__gallery-continue col-xs-4">6</div>
-            <div class="main__gallery-first col-xs-4"></div>
-            <div class="main__gallery-second col-xs-4"></div>
-        </div>
-        -->
-        <div class="main__gallery_md hidden-xs hidden-sm row">
-            <div class="main__gallery-continue col-xs-4">6</div>
-            <div class="main__gallery-first col-xs-4"></div>
-            <div class="main__gallery-second col-xs-4"></div>
-        </div>
-
-    </div>
-    <div class="main-footer row">
-            <div class="col-xs-12">9</div>
+<div class="main-header container-fluid row">
+    <nav class="main-header__nav">
+        <ul class="main-header__menu col-sm-6 col-sm-offset-5 col-sm-outset-1" >
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <h1 class="col-sm-12">Welcome To Our Studio!</h1>
+    <span class="col-sm-12">It's nice to meet you</span>
+    <div class=" col-sm-4 col-sm-offset-4 col-sm-outset-4">
+        <a class="btn" href="#">Tell me more</a>
     </div>
 </div>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<div class="main container-fluid row">
+    <div class="main__services">
+        <h2 class="col-sm-12">Services</h2>
+        <span class="col-sm-12">Proin iaculis purus consequat sem cure.</span>
+        <div class="main__services-features col-sm-10 col-sm-offset-1 col-sm-outset-1">
+            <div class="col-sm-4">
+                <div class="features-bg features-1"></div>
+                <h3>E-Commerce</h3>
+                <span>Proin iaculis purus consequat sem cure digni ssim.
+                    Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</span>
+            </div>
+            <div class="col-sm-4">
+                <div class="features-bg features-2"></div>
+                <h3>Responsive Web</h3>
+                <span>Proin iaculis purus consequat sem cure digni ssim.
+                    Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</span>
+            </div>
+            <div class="col-sm-4">
+                <div class="features-bg features-3"></div>
+                <h3>Web Security</h3>
+                <span>Proin iaculis purus consequat sem cure digni ssim.
+                    Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</span>
+            </div>
+        </div>
+    </div>
+    <div class="color-green main__portfolio">
+        <h2 class="col-sm-12">Our portfolio</h2>
+        <span class="col-sm-12">Proin iaculis purus consequat sem cure.</span>
+        <div class="main__portfolio-items col-sm-10 col-sm-offset-1 col-sm-outset-1">
+            <div class="col-sm-4">
+                <img src="img/portfl-1.png">
+                <b class="col-sm-12 col-xs-12">Ebony & Ivory</b>
+                <span class="col-sm-12 col-xs-12">Branding</span>
+            </div>
+            <div class="col-sm-4">
+                <img src="img/portfl-2.png">
+                <b class="col-sm-12 col-xs-12">Smart Stationary</b>
+                <span class="col-sm-12 col-xs-12">Print Design</span>
+            </div>
+            <div class="col-sm-4">
+                <img src="img/portfl-3.png">
+                <b class="col-sm-12 col-xs-12">Clever Poster</b>
+                <span class="col-sm-12 col-xs-12">Print Design</span>
+            </div>
+            <div class="col-sm-4">
+                <img src="img/portfl-4.png">
+                <b class="col-sm-12 col-xs-12">Vinyl Record</b>
+                <span class="col-sm-12 col-xs-12">Product Mock-Up</span>
+            </div>
+            <div class="col-sm-4">
+                <img src="img/portfl-5.png">
+                <b class="col-sm-12 col-xs-12">Treehouse Template</b>
+                <span class="col-sm-12 col-xs-12">Web Design</span>
+            </div>
+            <div class="col-sm-4">
+                <img src="img/portfl-6.png">
+                <b class="col-sm-12 col-xs-12">Burned Logo</b>
+                <span class="col-sm-12 col-xs-12">Branding</span>
+            </div>
+        </div>
+    </div>
+    <div class="main__about-us">
+        <h2 class="col-sm-12">About us</h2>
+        <span class="col-sm-12">Proin iaculis purus consequat sem cure.</span>
+        <div class="main__items">
+            <div class="main__item col-sm-12">
+                <div class="main__item-news col-sm-4 col-sm-offset-1">
+                    <b class="main__item-date">July 2010</b>
+                    <h3 class="main__item-title">Our Humble Beginnings</h3>
+                    <p class="main__item-descr">Proin iaculis purus consequat sem cure
+                        digni ssim. Donec porttitora entum suscipit
+                        aenean rhoncus posuere odio in tincidunt. Proin
+                        iaculis purus consequat sem cure digni
+                        ssim. Donec porttitora entum suscipit.</p>
+                </div>
+                <div class="main__item-img col-sm-2 col-sm-outset-5">
+                    <img src="img/about-1.png" height="183" width="183">
+                </div>
+            </div>
+            <div class="main__item col-sm-12">
+                <div class="main__item-img col-sm-2 col-sm-offset-5">
+                    <img src="img/about-2.png" height="183" width="183">
+                </div>
+                <div class="main__item-news col-sm-4 col-sm-outset-1">
+                    <b class="main__item-date">January 2011</b>
+                    <h3 class="main__item-title">Facing Startup Battles</h3>
+                    <p class="main__item-descr">Proin iaculis purus consequat sem cure
+                        digni ssim. Donec porttitora entum suscipit
+                        aenean rhoncus posuere odio in tincidunt. Proin
+                        iaculis purus consequat sem cure digni
+                        ssim. Donec porttitora entum suscipit aenean
+                        rhoncus posuere odio in tincidunt.</p>
+                </div>
+            </div>
+            <div class="main__item col-sm-12">
+                <div class="main__item-news col-sm-4 col-sm-offset-1">
+                    <b class="main__item-date">December 2012</b>
+                    <h3 class="main__item-title">Enter The Dark Days</h3>
+                    <p class="main__item-descr">Proin iaculis purus consequat sem cure
+                        digni ssim. Donec porttitora entum suscipit
+                        aenean rhoncus posuere odio in tincidunt. Proin
+                        iaculis purus consequat sem cure digni.</p>
+                </div>
+                <div class="main__item-img col-sm-2 col-sm-outset-5">
+                    <img src="img/about-3.png" height="183" width="183">
+                </div>
+            </div>
+            <div class="main__item col-sm-12">
+                <div class="main__item-img col-sm-2 col-sm-offset-5">
+                    <img src="img/about-4.png" height="183" width="183">
+                </div>
+                <div class="main__item-news col-sm-4 col-sm-outset-1">
+                    <b class="main__item-date">February 2014</b>
+                    <h3 class="main__item-title">Our Triumph</h3>
+                    <p class="main__item-descr">Proin iaculis purus consequat sem cure
+                        digni ssim. Donec porttitora entum suscipit
+                        aenean rhoncus posuere odio in tincidunt. Proin
+                        iaculis purus consequat sem cure digni
+                        ssim. Donec porttitora entum suscipit aenean.</p>
+                </div>
+            </div>
+        </div>
+        <img src="img/about-6.png" class="col-sm-2 col-sm-offset-5 col-sm-outset-5" height="183" width="183">
+    </div>
+    <div class="main__team">
+        <h2 class="col-sm-12">Our amazing team</h2>
+        <span class="col-sm-12">Proin iaculis purus consequat sem cure.</span>
+        <div class="col-sm-8 col-sm-offset-2 col-sm-outset-2">
+            <article class="col-sm-4 main__worker">
+                <img src="img/worker-face.png" class="main__worker-photo " height="221" width="220">
+                <b class="main__worker-name col-sm-12 col-xs-12">Kimberly Thompson</b>
+                <span class="col-sm-12 col-xs-12">Marketer</span>
+                <div class="main__worker-social col-sm-10 col-sm-offset-1 col-sm-outset-1">
+                    <a href="#" class="main__worker-social_tw"></a>
+                    <a href="#" class="main__worker-social_fb"></a>
+                    <a href="#" class="main__worker-social_p"></a>
+                </div>
+            </article>
+            <article class="col-sm-4 main__worker">
+                <img src="img/worker-face.png" class="main__worker-photo " height="221" width="220">
+                <b class="main__worker-name col-sm-12 col-xs-12">Rico Massimo</b>
+                <span class="col-sm-12 col-xs-12">Coder</span>
+                <div class="main__worker-social col-sm-12">
+                    <a href="#" class="main__worker-social_tw"></a>
+                    <a href="#" class="main__worker-social_fb"></a>
+                    <a href="#" class="main__worker-social_g"></a>
+                </div>
+            </article>
+            <article class="col-sm-4 main__worker">
+                <img src="img/worker-face.png" class="main__worker-photo " height="221" width="220">
+                <b class="main__worker-name col-sm-12 col-xs-12">Uku Mason</b>
+                <span class="col-sm-12 col-xs-12">Graphic Designer</span>
+                <div class="main__worker-social col-sm-12">
+                    <a href="#" class="main__worker-social_fb"></a>
+                    <a href="#" class="main__worker-social_p"></a>
+                </div>
+            </article>
+        </div>
+        <b class="main__team-descr col-sm-6 col-sm-offset-3 col-sm-outset-3">Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit
+aenean rhoncus posuere odio in tincidunt proin iaculis.</b>
+    </div>
+    <div class="main__partners hidden-xs">
+        <div class="main__partners-item main__partners-env"></div>
+        <div class="main__partners-item main__partners-wp"></div>
+        <div class="main__partners-item main__partners-at"></div>
+        <div class="main__partners-item main__partners-mc"></div>
+    </div>
+    <div class="main__contact-us">
+        <h2 class="col-sm-12">Contact us</h2>
+        <span class="col-sm-12">Proin iaculis purus consequat sem cure.</span>
+        <form action="#" method="post" class="col-sm-10 col-sm-outset-1 col-sm-offset-1">
+            <div class="col-sm-6">
+            <input type="text" name="username" placeholder="Your name *" autofocus minlength="15" required class="col-sm-12">
+            <input type="email" name="email-address" placeholder="Your e-mail *" required class="col-sm-12">
+            <input type="text" name="subject" placeholder="Subject" class="col-sm-12">
+            </div>
+            <div class="col-sm-6">
+            <textarea name="comment" placeholder="Your message *" required rows="9" class="col-sm-12"></textarea>
+            </div>
+            <div class="submit-btn col-sm-4 col-sm-offset-4 col-sm-outset-4">
+            <input type="submit" name="submit" value="Send message" class="btn">
+            </div>
+        </form>
+    </div>
+</div>
+<div class="main-footer container-fluid row">
+    <span class="main-footer__copyright col-sm-3 col-sm-offset-1">© Copyright 2014 FreebiesXpress.com</span>
+    <div class="main-footer__social col-sm-4 col-sm-outset-4">
+        <a href="#" class="main-footer__social-tw"></a>
+        <a href="#" class="main-footer__social-fb"></a>
+        <a href="#" class="main-footer__social-p"></a>
+        <a href="#" class="main-footer__social-g"></a>
+    </div>
+</div>
 </body>
 </html>
