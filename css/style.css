@@ -14,12 +14,7 @@
 }
 /*----------Стили для сетки----------*/
 
-.row {
-    margin-right: 0;
-}
-.container-fluid {
-    padding-right: 0;
-}
+
 [class*="col-"] {
     text-align: center;
     1outline: yellow dashed 2px;
@@ -33,10 +28,11 @@
     background-size: 100% 100%;
     color: #ffffff;
 }
-.main-header__nav {
+.main-header__nav  {
     margin-top: 50px;
-    margin-bottom: 252px
+    margin-bottom: 20.5%;
 }
+
 .main-header__menu {
     display: flex;
     justify-content: space-around;
@@ -82,7 +78,7 @@
 }
 .main-header .btn {
     margin-left: 10px;
-   
+    margin-bottom: 20px;
     
 }
 .main-header .btn:hover {
@@ -92,8 +88,8 @@
     min-height: 570px;
     color: #000000;
     padding-top: 92px;
-    padding-left: 5px;   
-
+    padding-left: 5px; 
+    padding-bottom: 40px;
 }
 .main__services h2 {
     font-family: 'Montserrat', sans-serif;
@@ -111,8 +107,8 @@
     margin-bottom: 36px;
 }
 .main__services-features {
-  padding-left: 30px;
-  padding-right: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
    
 }
 .main__services-features div {
@@ -153,10 +149,11 @@
     letter-spacing: -0.05em;
 }
 .main__portfolio {
+    margin-top: 10px;
     padding-left: 5px; 
     min-height: 1220px;
     background-color: #f7f7f7;
-    padding-top: 90px;
+    padding-top: 80px;
 }
 .main__portfolio h2 {
     font-family: 'Montserrat', sans-serif;
@@ -188,6 +185,7 @@
 .main__portfolio img {
     height: 300px;
     width: 290px;
+    
 }
 .main__portfolio b {
     font-family: 'Montserrat', sans-serif;
@@ -209,7 +207,7 @@
 }
 .main__about-us {
     min-height: 1670px;
-    padding-top: 88px;
+    padding-top: 78px;
    
 }
 .main__about-us h2 {
@@ -288,7 +286,7 @@
 
 .main__team {
     min-height: 790px;
-    padding-top: 83px;
+    padding-top: 73px;
     background-color: #f9f9f9;
     
 }
@@ -383,8 +381,8 @@
 .main__partners {
     display: flex;
     justify-content: center;
-    min-height: 185px;
-     padding-top: 80px;
+    min-height: 175px;
+     padding-top: 70px;
 }
 .main__partners-env {
   background: url("../img/Envato.png");
