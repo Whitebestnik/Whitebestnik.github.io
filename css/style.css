@@ -21,15 +21,30 @@
     color: #ffffff;
 }
 .main-header__nav  {
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 20.5%;
 }
-
+.main-header__btn {
+    background-color: #ffffff;
+    color: #000000;
+}
+.main-header__menu-xs  {
+    margin-left: 10px;
+}
+.main-header__menu-xs a {
+    text-transform: uppercase;
+    text-align: center;
+}
+.main-header__logo {
+    padding-top: 3px;
+    padding-left: 0;
+}
 .main-header__menu {
+    padding-top: 10px;
     display: flex;
     justify-content: space-around;
-    padding-left: 80px;
-    padding-right: 38px;
+    padding-left: 76px;
+    padding-right: 26px;
 }
 .main-header__menu li {
     list-style: none;
@@ -474,10 +489,11 @@ input[class*="col-"], textarea[class*="col-"]  {
 }
 .main-footer__copyright {
     padding-top: 9px;
-    padding-right: 6px;
+    padding-left: 10px;
+    padding-right: 0;
     padding-bottom: 40px;
-
-    text-align: right;
+    
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     line-height: 24px;

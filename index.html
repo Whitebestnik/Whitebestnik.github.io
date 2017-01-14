@@ -9,9 +9,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<div class="main-header container-fluid ">
+<div class="main-header container-fluid">
     <nav class="main-header__nav">
-        <ul class="main-header__menu col-md-6 col-md-offset-5 col-md-outset-1 hidden-xs" >
+        <div class="dropdown visible-xs">
+            <button class="btn main-header__btn" id="dropdownMenu" type="button" data-toggle="dropdown" aria-expanded="false">
+                Menu
+            </button>
+            <ul class="main-header__menu-xs dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                <li><a href="#">Home</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Services</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Portfolio</a></li>
+                <li class="divider"></li>
+                <li><a href="#">About</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="main-header__logo col-md-2 col-md-offset-1">
+            <img src="img/Logo-Treehouse.png" height="28" width="79">
+        </div>
+        <ul class="main-header__menu col-md-6 col-md-offset-2 col-md-outset-1 hidden-xs" >
             <li><a href="#">Home</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Portfolio</a></li>
@@ -95,7 +114,7 @@
                 <div class="main__event-news col-md-4 col-md-offset-1 col-sm-5">
                     <b class="main__event-date">July 2010</b>
                     <h3 class="main__event-title">Our Humble Beginnings</h3>
-                    <p class="main__event-descr ">Proin iaculis purus consequat sem cure
+                    <p class="main__event-descr">Proin iaculis purus consequat sem cure
                         digni ssim. Donec porttitora entum suscipit
                         aenean rhoncus posuere odio in tincidunt. Proin
                         iaculis purus consequat sem cure digni
@@ -112,7 +131,7 @@
                 <div class="main__event-news col-md-4 col-md-offset-7 col-sm-5 col-sm-offset-7">
                     <b class="main__event-date">January 2011</b>
                     <h3 class="main__event-title">Facing Startup Battles</h3>
-                    <p class="main__event-descr ">Proin iaculis purus consequat sem cure
+                    <p class="main__event-descr">Proin iaculis purus consequat sem cure
                         digni ssim. Donec porttitora entum suscipit
                         aenean rhoncus posuere odio in tincidunt. Proin
                         iaculis purus consequat sem cure digni
@@ -124,7 +143,7 @@
                 <div class="main__event-news col-md-4 col-md-offset-1 col-sm-5">
                     <b class="main__event-date">December 2012</b>
                     <h3 class="main__event-title">Enter The Dark Days</h3>
-                    <p class="main__event-descr ">Proin iaculis purus consequat sem cure
+                    <p class="main__event-descr">Proin iaculis purus consequat sem cure
                         digni ssim. Donec porttitora entum suscipit
                         aenean rhoncus posuere odio in tincidunt. Proin
                         iaculis purus consequat sem cure digni.</p>
@@ -140,7 +159,7 @@
                 <div class="main__event-news col-md-4 col-md-offset-7 col-sm-5 col-sm-offset-7">
                     <b class="main__event-date">February 2014</b>
                     <h3 class="main__event-title">Our Triumph</h3>
-                    <p class="main__event-descr ">Proin iaculis purus consequat sem cure
+                    <p class="main__event-descr">Proin iaculis purus consequat sem cure
                         digni ssim. Donec porttitora entum suscipit
                         aenean rhoncus posuere odio in tincidunt. Proin
                         iaculis purus consequat sem cure digni
@@ -238,7 +257,7 @@ aenean rhoncus posuere odio in tincidunt proin iaculis.</b>
     </div>
 </div>
 <div class="main-footer container-fluid">
-    <span class="main-footer__copyright col-md-3 col-md-offset-1">© Copyright 2014 FreebiesXpress.com</span>
+    <span class="main-footer__copyright col-md-3 col-md-offset-1 col-sm-12 col-xs-12">© Copyright 2014 FreebiesXpress.com</span>
     <div class="main-footer__social col-md-4 col-md-outset-4 col-xs-12">
         <a href="#" class="footer-icon main-footer__social-tw"></a>
         <a href="#" class="footer-icon main-footer__social-fb"></a>
@@ -246,5 +265,7 @@ aenean rhoncus posuere odio in tincidunt proin iaculis.</b>
         <a href="#" class="footer-icon main-footer__social-g"></a>
     </div>
 </div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
