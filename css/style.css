@@ -153,14 +153,16 @@
     letter-spacing: -0.01em;
 }
 .main__portfolio-items {
-    padding-right: 23px;
-    padding-left: 16px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
 }
 
 .main__portfolio-item {
     min-height: 394px;
     width: 290px;
-    margin: 35px 17px 15px 17px;
+    margin: 36px 29px 14px 5px;
 }
 .main__portfolio-item:hover > b, .main__portfolio-item:hover > span {
     background-color: #eeeeee;
@@ -212,31 +214,41 @@
     font-size: 16px;
     letter-spacing: -0.01em;
 }
+
 .main__event {
+    display: flex;
     min-height: 275px;
     padding-left: 10px;
 }
+
 .main__event::before {
     content: "";
     position: absolute;
-    height: 100%;
+    height: 300px;
     left: 50%;
     right: 50%;
     border: 1px solid #f1f1f1;
 }
-.main__event [class*="col-"] {
+.main__events  .main__event-img {
+   position: absolute;
+    margin-left: -90px;
+   left: 50%;
+   right: 50%;
+   
+}
+.main__event [class*="col-"]  {
     text-align: right;
 }
-.main__event:nth-child(2n) [class*="col-"] {
+.main__event:nth-child(2n) [class*="col-"]  {
     text-align: left;
 }
 .main__event:nth-child(1n) .main__event-news {
-    padding-right: 27px;
+    padding-right: 35px;
     padding-left: 110px;
 }
 .main__event:nth-child(2n) .main__event-news {
     padding-right: 110px;
-    padding-left: 35px;
+    padding-left: 25px;
 }
 .main__event-date {
     font-family: 'Montserrat', sans-serif;
@@ -267,7 +279,7 @@
     margin-bottom: 60px;
 }
 .main__team {
-    min-height: 790px;
+    min-height: 820px;
     padding-top: 86px;
     padding-right: 0;
     padding-left: 5px;
@@ -361,8 +373,8 @@
 .main__partners {
     display: flex;
     justify-content: center;
-    min-height: 187px;
-    padding-top: 84px;
+    min-height: 157px;
+    padding-top: 54px;
 }
 .main__partners-item  {
     margin-left: 20px;
