@@ -13,31 +13,11 @@
 }
 /*----------Стили для сетки----------*/
 /*----------Basic styles----------*/
+
+
+
 @media screen and (max-width: 768px) {
-    body,
-    main,
-    .container {
-        max-width: 100%;
-        padding: 0;
-    }
-    .contact-box,
-    .main-header__menu,
-    .main-header__lower_content,
-    .main-integration__features,
-    .about-backups,
-    .about-recovery,
-    .main-footer__content,
-    .main-footer__column-social {
-        flex-direction: column;
-        text-align: center;
-        max-width: 768px;
-    }
-    .main-header__top_left {
-        width: 70%;
-    }
-    
-    
-    
+
     
 }
 @font-face {
@@ -761,3 +741,140 @@ select {
     background-position: -10px -215px;
 }
 
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+    body,
+    main,
+    .container,
+    .main-header__top {
+        min-width: 320px;
+        max-width: 768px;
+    }
+    .contact-box,
+    .main-header__menu,
+    .main-header__lower_content,
+    .main-integration__features,
+    .about-backups,
+    .about-recovery,
+    .main-footer__content {
+        flex-direction: column;
+        min-width: 320px;
+        max-width: 768px;
+    }
+    .main-header__top_left,
+    .main-header__top_right,
+    .main-header__top-logo {
+        width: 50%
+    }
+    .contact-box__left-new,
+    .contact-box__left-title,
+    .contact-box__left-netapp,
+    form {
+        margin: 0 auto;
+        margin-bottom: 40px;
+
+    }
+    form {
+        width: 260px;
+    }
+    .main-header__top {
+        background-color: #ffffff;
+    }
+    .main-header__top_right,
+    .main-header__top::before {
+        visibility: hidden;
+    }
+    .main-header__top_left,
+    .main-header__top-logo {
+        transform: none;
+        border: none;
+    }
+    .contact-box__left,
+    .contact-box__left-title {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .contact-box__left-new {
+        text-align: left;
+    }
+    .main-header__menu {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .main-header__menu li {
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .main-header__menu li:last-child  {
+        border: none;
+    }
+    .main-header__menu li:last-child a {
+        width: 100%;
+        margin-left: 0;
+    }
+    .main-header__lower-img {
+        margin: 0;
+    }
+    .main-header__lower-img,
+    .main-header__navigation,
+    .main-integration-img,
+    .main-backups-img,
+    .about-recovery-img {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .main-integration__table,
+    .about-recovery__table {
+        display: none;
+    }
+    .main-header__lower-descr,
+    .main-integration,
+    .main-backups,
+    .main-recovery {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .about-recovery__bottom .about-recovery {
+        flex-direction: row;
+    }
+    .main-about__description {
+        padding-bottom: 40px;
+    }
+    .main-footer__column-copyright {
+        text-align: center;
+    }
+    .main-footer__column-links {
+        border: none;
+    }
+    .main-footer__column-copyright,
+    .main-footer__column-links,
+    .main-footer__column-social {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .main-footer__column-social a {
+        margin-right: 20px;
+    }
+
+}
+
+@media only screen and (max-width : 320px) {
+    .main-header__top img {
+        width: 290px;
+    }
+    .container {
+        padding: 0;
+    }
+    img + span {
+        margin-bottom: 20px;
+    }
+    img {
+        width: 290px;
+        margin: 0 auto;
+    }
+    .about-recovery__bottom {
+        display: none;
+    }
+    .about-recovery__bottom .about-recovery ul {
+        margin: 0;
+    }
+
+}
