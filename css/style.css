@@ -40,14 +40,17 @@ main{
     border-bottom: 4px solid #0aa60a;
 }
 .main-header__top_left {
-    width: 73%;
+    margin-left: auto;
+    width: 765px;
     transform: skew(-38deg);
     background-color: #ffffff;
     border-right: 20px solid #54b948;
 }
 .main-header__top_right {
+    text-align: left;
+    margin-right: auto;
     position: relative;
-    width: 27%;
+    width: 195px;
 }
 .main-header__top_left::before {
     transform: skew(38deg);
@@ -59,10 +62,9 @@ main{
 }
 .main-header__top-logo {
     transform: skew(38deg);
-    width: 298px;
-    margin: 0 auto;
+    width: 598px;
+    margin-left: 14px;
     margin-top: 14px;
-    1padding-right: 398px;
 }
 .main-header__top-title {
     width: 160px;
