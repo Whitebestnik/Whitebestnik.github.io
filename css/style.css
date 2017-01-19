@@ -1,4 +1,4 @@
-﻿/*----------Стили для сетки------------*/
+/*----------Стили для сетки----------*/
 .color-red {
     outline: red dashed 2px;
     background: rgba(255, 0, 0, 0.3);
@@ -52,11 +52,11 @@ main{
     position: relative;
     width: 195px;
 }
-.main-header__top_left::before {
-    transform: skew(38deg);
+.main-header__top::before {
+    1transform: skew(38deg);
     content: "";
     position: absolute;
-    width: 100px;
+    width: 50%;
     height: 78px;
     background-color: white;
 }
