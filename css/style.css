@@ -13,6 +13,33 @@
 }
 /*----------Стили для сетки----------*/
 /*----------Basic styles----------*/
+@media screen and (max-width: 768px) {
+    body,
+    main,
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+    .contact-box,
+    .main-header__menu,
+    .main-header__lower_content,
+    .main-integration__features,
+    .about-backups,
+    .about-recovery,
+    .main-footer__content,
+    .main-footer__column-social {
+        flex-direction: column;
+        text-align: center;
+        max-width: 768px;
+    }
+    .main-header__top_left {
+        width: 70%;
+    }
+    
+    
+    
+    
+}
 @font-face {
     font-family: MyriadPro-Light; 
     src: url("../fonts/myriad-pro-light.ttf"); 
@@ -21,12 +48,13 @@
     font-family: MyriadPro-Regular; 
     src: url("../fonts/myriad-pro-regular.ttf"); 
    }
-main{
+main {
     background-color: #ffffff;
     color: #000000;
 }
 .container {
     max-width: 940px;
+    min-width: 768px;
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
@@ -53,7 +81,6 @@ main{
     width: 195px;
 }
 .main-header__top::before {
-    1transform: skew(38deg);
     content: "";
     position: absolute;
     width: 50%;
